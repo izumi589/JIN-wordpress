@@ -12,14 +12,11 @@ body {
 /* ヘッダー */
 header {
   width: 100%;
+  max-width: 920px;
   border-top: 10px solid #71C9C7;
-}
-
-.header-wrapper {
-  width: 920px;
   margin: auto;
   /* background-color: blue; */
-  }
+}
 
 .header-top {
   height: 150px;
@@ -101,8 +98,9 @@ header {
 
 /* トップラッパー */
 .containar {
-  width: 920px;
+  width: 100%;
   margin: auto;
+  max-width: 920px;
   /* background-color: gold; */
   height: 1000px;
   /* clear: both; */
@@ -172,30 +170,30 @@ header {
   .seledted {
     font-weight: bold;
   }
-  
+
   footer {
-    /* background-color: blueviolet; */
-    height: 200px;
-    
+    width: 100%;
+    max-width: 920px;
+    margin: auto;
   }
-  
   .footer-top {
-    background-color: #71C9C7;
     border-radius: 6px;
     width: 100%;
     margin: auto;
+    background-color: #71C9C7;
     border: 1px solid #71C9C7;
     height: 50px;
   }
-  
+ 
   .footer-top li {
     float: left;
     padding-right: 30px;
     color: white;
     padding-bottom: 30px;
     list-style: circle;
+    height: 10px;
   }
-  
+ 
   .footer-adress {
     text-align: right;
     margin: auto;
@@ -212,7 +210,7 @@ header {
 }
 
 /* スマホ向けレイアウト */
-   @media (max-width: 670px) {
+   @media (max-width: 670px ) {
     .flex-list li {
       width: 100%;
       margin: 5px;
@@ -225,27 +223,30 @@ header {
     .containar {
       height: 1200px;
       display: flex;
-      align-items: stretch;
       flex-direction:column
     }
     
     .news-wrapper {
       width: 100%;
     }
- 
+    
+    .menu-wrapper {
+      margin: auto;
+    }
     .footer-top {
       width: 100%;
       height: 60px;
     }
 
     .footer-top li {
-      padding: 0 5px 5px 0;
+      padding: 5px 5px 30px 0;
+      margin-top: ;
       font-size: 13px;
       width: 33%;
     }
 
     .footer-top ul {
-       margin-top: 10px;
+      margin: 0;
     }
 
     .footer-adress {
