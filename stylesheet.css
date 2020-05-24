@@ -1,8 +1,9 @@
 * {box-sizing: border-box;}
 *{margin: 0 auto;}
-
+body {
+  font-family:'Quicksand','Noto Sans Japanese', sans-serif
+}
 .wrapper {
-  max-width: 1190px;
   margin: auto;
 }
 
@@ -17,7 +18,7 @@ header h1 {
 }
 
 header span {
-   color: lawngreen;
+  color: #9ACC1E;
 }
 
 .list {
@@ -29,6 +30,7 @@ header span {
 
 .list a {
   text-decoration: none;
+  color: black
 }
 
 .list li:hover {
@@ -37,6 +39,7 @@ header span {
 
 
 .container {
+  max-width: 1190px;
   display: flex;
 
 }
@@ -76,7 +79,7 @@ header span {
 .post-list-inner span {
   font-size: 1px;
   padding: 5px;
-  background-color: rgb(133, 175, 90);
+  background-color: #9ACC20;
   border-radius: 20px;
   color: white;
   position: absolute;
@@ -295,8 +298,9 @@ border-bottom: 2px solid gray;
   background-color: black;
   color: white;
   border: 1px solid black;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
+  font-size: 12px;
 }
 
 .page {
@@ -304,6 +308,7 @@ border-bottom: 2px solid gray;
 }
 
 footer {
+  width: 100%;
   background-color: #393542;
   margin-top: 50px;
   color: white；
